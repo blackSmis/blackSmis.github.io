@@ -152,6 +152,82 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-git操作" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/06/12/git%E6%93%8D%E4%BD%9C/">Git配置</a>
+    </h1>
+  
+
+        
+        <a href="/2020/06/12/git%E6%93%8D%E4%BD%9C/" class="archive-article-date">
+  	<time datetime="2020-06-12T07:04:18.116Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-12</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="git配置流程"><a href="#git配置流程" class="headerlink" title="git配置流程"></a>git配置流程</h3><h4 id="在GitHub上创建仓库"><a href="#在GitHub上创建仓库" class="headerlink" title="在GitHub上创建仓库"></a>在GitHub上创建仓库</h4><h4 id="下载安装git，运行bash"><a href="#下载安装git，运行bash" class="headerlink" title="下载安装git，运行bash"></a>下载安装git，运行bash</h4><h5 id="配置自己的信息"><a href="#配置自己的信息" class="headerlink" title="配置自己的信息"></a>配置自己的信息</h5><ul>
+<li>git config –global user.name “black smith”</li>
+<li>git config –global user.email “<a href="mailto:xxx@xxx.com">xxx@xxx.com</a>“</li>
+</ul>
+<hr>
+<ol>
+<li>进入到需要上传的目录下</li>
+<li>输入git init（初始化，生成.git文件）</li>
+<li>git add . （将项目上所有的文件添加到仓库中）</li>
+<li>git commit -m “提交信息”（此次提交的注释）</li>
+<li>git remote add origin https://自己的仓库地址(关联之后可以用git remote -v 来检查是否关联成功)</li>
+<li>一般情况需要先pull一下：git pull origin master</li>
+<li>git push -u origin master （将项目添加到仓库中）</li>
+</ol>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/06/12/git%E6%93%8D%E4%BD%9C/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-webpack" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -159,7 +235,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/06/12/webpack/">webpack</a>
+      <a class="article-title" href="/2020/06/12/webpack/">webpack学习</a>
     </h1>
   
 
@@ -172,7 +248,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">npm install moduleName # 安装模块到项目目录下 </span><br><span class="line">npm install -g moduleName # -g 的意思是将模块安装到全局，具体安装到磁盘哪个位置，要看 npm config prefix 的位置。</span><br><span class="line">npm install --save moduleName # -save 的意思是将模块安装到项目目录下，并在package文件的dependencies节点写入依赖。 等于-S</span><br><span class="line">npm install --save-dev moduleName #-save-dev的意思是将模块安装到项目目录下，并在package文件的devDependencies节点写入依赖。等于-D</span><br></pre></td></tr></table></figure>
+        <h2 id="npm-安装命令"><a href="#npm-安装命令" class="headerlink" title="npm 安装命令"></a>npm 安装命令</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">npm install moduleName # 安装模块到项目目录下 </span><br><span class="line">npm install -g moduleName # -g 的意思是将模块安装到全局，具体安装到磁盘哪个位置，要看 npm config prefix 的位置。</span><br><span class="line">npm install --save moduleName # -save 的意思是将模块安装到项目目录下，并在package文件的dependencies节点写入依赖。 等于-S</span><br><span class="line">npm install --save-dev moduleName #-save-dev的意思是将模块安装到项目目录下，并在package文件的devDependencies节点写入依赖。等于-D</span><br></pre></td></tr></table></figure>
 
 <h2 id="进入项目目录"><a href="#进入项目目录" class="headerlink" title="进入项目目录"></a>进入项目目录</h2><ul>
 <li><p>初始化 npm<br>npm init -y //-y 为yes的意思 生成默认的package.json</p>
@@ -290,7 +366,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/06/12/vue/">vue</a>
+      <a class="article-title" href="/2020/06/12/vue/">vue学习</a>
     </h1>
   
 
@@ -303,7 +379,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="vue使用"><a href="#vue使用" class="headerlink" title="vue使用"></a>vue使用</h2><h4 id="下载并引入vue-js文件"><a href="#下载并引入vue-js文件" class="headerlink" title="下载并引入vue.js文件"></a>下载并引入vue.js文件</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src&#x3D;&quot;.&#x2F;lib&#x2F;vue.min.js&quot;&gt;&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+        <h4 id="下载并引入vue-js文件"><a href="#下载并引入vue-js文件" class="headerlink" title="下载并引入vue.js文件"></a>下载并引入vue.js文件</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src&#x3D;&quot;.&#x2F;lib&#x2F;vue.min.js&quot;&gt;&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
 <h4 id="新建vm对象"><a href="#新建vm对象" class="headerlink" title="新建vm对象"></a>新建vm对象</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id&#x3D;&quot;app&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">    var vm &#x3D; new Vue(&#123;</span><br><span class="line">        el:&quot;#app&quot;,</span><br><span class="line">        data:&#123;&#125;,</span><br><span class="line">        methods:&#123;&#125;</span><br><span class="line">    &#125;)</span><br><span class="line"> &lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
 <h4 id="自定义全局过滤器"><a href="#自定义全局过滤器" class="headerlink" title="自定义全局过滤器"></a>自定义全局过滤器</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;td&gt;&#123;&#123;item.time | dateFormat()&#125;&#125;&lt;&#x2F;td&gt;</span><br><span class="line">Vue.filter(&quot;dateFormat&quot;,function(dateStr,pattern&#x3D;&quot;&quot;)&#123;&#125;</span><br></pre></td></tr></table></figure>
 
@@ -369,7 +445,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/06/12/linux/">linux</a>
+      <a class="article-title" href="/2020/06/12/linux/">linux操作</a>
     </h1>
   
 
@@ -382,7 +458,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="linux操作"><a href="#linux操作" class="headerlink" title="linux操作"></a>linux操作</h1><h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><table>
+        <h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><table>
 <thead>
 <tr>
 <th>编号</th>
